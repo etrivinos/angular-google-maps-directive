@@ -1,0 +1,60 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+body {
+  background-color: #222;
+  font-family: sans-serif;
+}
+ 
+.buttons-bar {
+  display: -webkit-flex;
+  display: flex;
+}
+ 
+[class*="button-"] {
+  border: 1px solid;
+  color: #fff;
+  display: block;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  padding: .7em;
+  text-align: center;
+}
+ 
+.button-add {
+  background-color: #56AD56;
+  border-color: #3b873b;
+}
+ 
+.button-del {
+  background-color: #CD433D;
+  border-color: darkred;
+}
+ 
+.center {
+  left: 50%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 600px;
+}
+ 
+#md-google-maps {
+  background: white;
+  border: 1px solid #bbb;
+  height: 300px;
+  margin: 10px 0;
+}
+ 
+h1 {
+  color: white;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
