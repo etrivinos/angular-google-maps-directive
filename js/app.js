@@ -9,5 +9,13 @@
   function Controller() {
     var vm = this;
     vm.control = {};
+
+    vm.options = {
+	  mapTypeControl: true,
+	  mapTypeId: google.maps.MapTypeId.ROADMAP,
+	  panControl: true,
+	  streetViewControl: true,
+	  zoomControl: true
+	};
   }
 } ());

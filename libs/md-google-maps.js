@@ -14,7 +14,8 @@
         lat: '=',
         lng: '=',
         zoom: '=',
-        control: '='
+        control: '=',
+        options: '='
       },
       template: '<div id="md-google-maps"></div>',
       link: function(scope, element, attrs) {
@@ -45,7 +46,11 @@
           arrMarkers = [];
         }
          
-        function initialize() {    
+        function initialize() {
+          if(undefined !== scope.options) {
+            mapSettings = _.merge(mapSettings, scope.options);
+          }
+
           map = new google.maps.Map(element[0], mapSettings);
                
           if(undefined !== scope.control) {
