@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+    <title>Directiva de Google Maps</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://maps.google.com/maps/api/js?v=3.exp"></script>
+  </head>
+ 
+  <body ng-app="mapApp" ng-controller="mapCtrl as Map">
+     
+    <div class="center">
+      <h1>Directiva de Google Maps</h1>
+      <md-google-maps></md-google-maps>
+      <div class="buttons-bar">
+        <a ng-click="Map.control.addMarker()" class="button-add">Agregar Marker</a>
+        <a ng-click="Map.control.clearMarkers()" class="button-del">Eliminar Markers</a>
+      </div>
+    </div>
+     
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+    <script src="libs/md-google-maps.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+ 
+</html>
