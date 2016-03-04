@@ -8,5 +8,6 @@
    
   function Controller() {
     var vm = this;
+    vm.control = {};
   }
 } ());
